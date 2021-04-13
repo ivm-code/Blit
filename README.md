@@ -105,7 +105,7 @@ The binary number 1100 corresponds to this pyramid:
 Similary, the binary number 
 
     0101110 11010 011 0
-  = 0101 1101 1010 0110 = 0x5da6
+    = 0101 1101 1010 0110 = 0x5da6
 
 corresponds to this pyramid:
 
@@ -125,22 +125,22 @@ a single-bit checksum.
 It does this by matching patterns in the input pyramid, and reducing those patterns 
 according to the following 16 transition rules:
 
-  0000 -> 0000
-  0001 -> 1000
-  0010 -> 0001
-  0011 -> 0010
-  0100 -> 0000
-  0101 -> 0010
-  0110 -> 1011
-  0111 -> 1011
-  1000 -> 0100
-  1001 -> 0101
-  1010 -> 0111
-  1011 -> 1111
-  1100 -> 1101
-  1101 -> 1110
-  1110 -> 0111
-  1111 -> 1111
+    0000 -> 0000
+    0001 -> 1000
+    0010 -> 0001
+    0011 -> 0010
+    0100 -> 0000
+    0101 -> 0010
+    0110 -> 1011
+    0111 -> 1011
+    1000 -> 0100
+    1001 -> 0101
+    1010 -> 0111
+    1011 -> 1111
+    1100 -> 1101
+    1101 -> 1110
+    1110 -> 0111
+    1111 -> 1111
 
 So the third rule 0010 -> 0001 states that a group of four triangles with this shape
 changes like this:
@@ -288,26 +288,26 @@ is the same as the input), applies the rules, prints the resulting pyramid for e
 and loops until the pyramid is reduced to a single bit and you print either a 0 or 1 on a single line.
 
 Sample dump of a session:
-
+```
 > blit.exe 0100
 0100
 0000
 0
-
+```
 Please include the dump of a session starting with your birthday as an integer in MMDDYY divded by two, encoded to binary 
 in your response.
 So if you are born the 24th of December 1980, the seed is 122480/2 = 61240 and it becomes this invocation:
-
+```
 > blit.exe 1110111100111000
 [intermediate output skipped] 
 1
-
+```
 Also, please include a dump of a session with this input:
-
+```
 > blit.exe 1100100100001111110110101010001000100001011010001100001000110100
 [intermediate output skipped] 
 1
-
+```
 For reference, here is a visual dump of the rules:
 
          ^             ^
