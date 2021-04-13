@@ -28,27 +28,27 @@ Criterion 3 is less important than 1 & 2.
 Blit takes place in a 2D pyramid of triangles. The pyramids vary in size, from the smallest of 
 size 1 being a single cell:
 
-		^
+	    ^
 	   / \
 	  *---*
 
 doubling to the pyramid with 4 cells:
 
-		  ^
-		 / \
-		*---*
+	      ^
+	     / \
+	    *---*
 	   / \ / \
 	  *---*---*
 
 Double again to get the pyramid with 16 cells:
 
-			  ^
-			 / \
-			*---*
-		   / \ / \
-		  *---*---*
-		 / \ / \ / \
-		*---*---*---*
+		  ^
+		 / \
+		*---*
+	       / \ / \
+	      *---*---*
+	     / \ / \ / \
+	    *---*---*---*
 	   / \ / \ / \ / \
 	  *---*---*---*---*
 
